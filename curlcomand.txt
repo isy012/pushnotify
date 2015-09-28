@@ -8,3 +8,5 @@ curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -
 
 
 curl "https://www.mockaroo.com/7db04980/download?count=1000&key=54f347b0"
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -X POST http://localhost:8000/message
