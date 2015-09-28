@@ -7,10 +7,10 @@
 	This is an example of a client subscribing to the Faye Server.
 	<div id = "messages">
 
-<script type = "text/javascript" src="http://localhost:8000/faye/client.js"></script>
+<script type = "text/javascript" src="https://safe-beyond-9988.herokuapp.com/faye/client.js"></script>
 
 <script>
-      var client = new Faye.Client('http://localhost:8000/faye/');
+      var client = new Faye.Client('https://safe-beyond-9988.herokuapp.com/faye/');
       
       client.subscribe('/channel', function(message) {
         $("#messages").append("<p>" + message.text + "</p>");
