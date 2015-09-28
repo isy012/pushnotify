@@ -32,7 +32,7 @@ var server = http.createServer(app),
     bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 
 bayeux.attach(server);
-server.listen(8000);
+server.listen(process.env.PORT || 8000)
 console.log('server listening to 8000')
 
 
