@@ -1,14 +1,14 @@
 var http = require('http'),
-	bodyParser = require('body-parser'),
+	bodyParser = require('body-parser'), //need this to parse body request
 	express = require('express'),
 	app = express(),
     faye = require('faye');
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser());
 
 app.post('/message', function(req, res) {
-  console.log(req.body.message);
   bayeux.getClient().publish('/channel', {text: req.body.message});
   res.send(200);
 });
