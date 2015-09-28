@@ -6,7 +6,7 @@ var client = new Mockaroo.Client({
 })
 
 client.generate({
-    count: 2,
+    count: 10,
     schema: 'Emerson Sensi Feed Data'
 }).then(function(records) {
     //process the records

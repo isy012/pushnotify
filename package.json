@@ -1,12 +1,18 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
+  "name": "pushnotify",
+  "version": "0.5.0",
+  "description": "Push Mockaroo Data ",
+  "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.0.2",
-    "express": "~4.1.1",
-    "faye": "~1.1.2",
-    "mockaroo": "~0.1.5",
-    "sleep": "~3.0.0"
-  }
+    "sleep": "^3.0.0",
+    "faye": "^1.1.2",
+    "body-parser": "^1.14.0",
+    "express": "^4.1.2",
+    "mockaroo": "^0.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isy012/pushnotify.git"
+  },
+  "author": "Izzy Park"
 }

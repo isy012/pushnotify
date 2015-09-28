@@ -15,14 +15,13 @@ app.use(bodyParser());
 app.post('/message', function(req, res) {
 
   client.generate({
-	    count: 2,
+	    count: 20,
 	    schema: 'Emerson Sensi Feed Data'
 	}).then(function(records) {
-	    //process the records
+	    //console.log(records);
 	    for (var i=0; i<records.length; i++) {
 	        var record = records[i];
-	        //console.log(record);
-	        bayeux.getClient().publish('/channel', {text: record.indoor_equipment});
+	        bayeux.getClient().publish('/channel', {text: record.icd_id});
 	    }
   	});
 
